@@ -1,0 +1,24 @@
+.main{
+    -fx-background-color: #f3ece7;;
+}
+
+.btn{
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-color: #a9a9a9;
+    -fx-background-color: none;
+    -fx-transition: background-color 0.9s ease;
+}
+
+.btn:hover{
+    -fx-background-color: #4299ff;
+    -fx-cursor: hand;
+    -fx-font-weight: 900;
+    -fx-text-fill: #FFFFFF;
+}
+
+.label{
+     -fx-font-family: "Times New Roman";
+     -fx-font-size: 13px;
+     -fx-font-weight: 400;
+}

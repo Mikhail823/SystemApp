@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <Property name="LOG_DIR">logs</Property>
+        <Property name="PATERN">%relative %d{dd-MM-yyyy} %d{HH:mm:ss.SSS} [%t] %-5level %logger - %msg%n</Property>
+    </Properties>
+    <Appenders>
+        <RollingFile name="RollingfileAppender" append="true"
+                     fileName="logs/logfile.txt"
+                     filePattern="logs/$${date:yyyy-MM}/logfile-%d{dd.MM.yyyy}__%i.zip">
+            <PatternLayout pattern="${PATERN}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="20 kB"/>
+            </Policies>
+        </RollingFile>
+        <Async name="Async-file" bufferSize="100" blocking="true" ignoreExceptions="false">
+            <AppenderRef ref="RollingfileAppender"/>
+            <LinkedTransferQueue/>
+        </Async>
+
+    </Appenders>
+    <Loggers>
+        <Logger name="ru.popov.systemapp" level="info" additivity="false">
+            <AppenderRef ref="RollingfileAppender"/>
+        </Logger>
+        <Root level="error">
+            <AppenderRef ref="RollingfileAppender"/>
+        </Root>
+    </Loggers>
+</Configuration>

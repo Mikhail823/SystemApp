@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane styleClass="main"
+      maxHeight="-Infinity"
+      maxWidth="-Infinity"
+      minHeight="-Infinity"
+      minWidth="-Infinity"
+      prefHeight="250.0"
+      prefWidth="416.0"
+      xmlns="http://javafx.com/javafx/17.0.6"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="ru.popov.systemapp.controller.QRScannerController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="250.0" prefWidth="416.0">
+         <children>
+            <Label fx:id="infoLabel" contentDisplay="CENTER" text="Ожидание сканирования QR-кода.....">
+               <VBox.margin>
+                  <Insets bottom="8.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="infoScan" prefHeight="16.0" prefWidth="277.0" />
+            <TextArea fx:id="inputText" onKeyTyped="#onTypedKeyAction" opacity="0.0" prefHeight="97.0" prefWidth="396.0">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="10.0" right="10.0" />
+               </VBox.margin>
+            </TextArea>
+            <ToolBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="50.0" prefWidth="416.0" style="-fx-background-color: none;" VBox.vgrow="NEVER">
+              <items>
+                <Button styleClass="btn" fx:id="btnDisChange" onAction="#onClickBtnDisChangeBattery" mnemonicParsing="false" text="На разряд" />
+                  <Button styleClass="btn" onAction="#onClickBtnChangeBattery" fx:id="btnChange" mnemonicParsing="false" text="На заряд" />
+                  <Separator prefHeight="41.0" prefWidth="106.0" />
+                  <ProgressIndicator fx:id="progress" opacity="0.0" progress="0.0" />
+              </items>
+            </ToolBar>
+         </children>
+      </VBox>
+   </children>
+</Pane>

@@ -1,0 +1,109 @@
+3060 08-01-2025 00:55:45.197 [main] INFO  ru.popov.systemapp.PreloaderApp - Загрузка приложения.......
+6140 08-01-2025 00:55:48.277 [JavaFX Application Thread] INFO  ru.popov.systemapp.dao.impl.JournalDAOImpl - Получен список электронного журнала
+6185 08-01-2025 00:55:48.322 [Thread-3] INFO  ru.popov.systemapp.dao.impl.EmployeesDAOImpl - Получен список имен сотрудников
+6195 08-01-2025 00:55:48.332 [JavaFX Application Thread] INFO  ru.popov.systemapp.controller.MainController - Соединение с БД успешное.
+6195 08-01-2025 00:55:48.332 [Thread-2] INFO  ru.popov.systemapp.dao.impl.EmployeesDAOImpl - Получен список имен сотрудников
+3144 08-01-2025 01:15:18.622 [main] INFO  ru.popov.systemapp.PreloaderApp - Загрузка приложения.......
+6018 08-01-2025 01:15:21.496 [JavaFX Application Thread] INFO  ru.popov.systemapp.dao.impl.JournalDAOImpl - Получен список электронного журнала
+6071 08-01-2025 01:15:21.549 [Thread-2] INFO  ru.popov.systemapp.dao.impl.EmployeesDAOImpl - Получен список имен сотрудников
+6079 08-01-2025 01:15:21.557 [Thread-3] INFO  ru.popov.systemapp.dao.impl.EmployeesDAOImpl - Получен список имен сотрудников
+6104 08-01-2025 01:15:21.582 [JavaFX Application Thread] INFO  ru.popov.systemapp.controller.MainController - Соединение с БД успешное.
+3792 08-01-2025 01:18:38.031 [main] INFO  ru.popov.systemapp.PreloaderApp - Загрузка приложения.......
+7870 08-01-2025 01:18:42.109 [JavaFX Application Thread] INFO  ru.popov.systemapp.dao.impl.JournalDAOImpl - Получен список электронного журнала
+7947 08-01-2025 01:18:42.186 [Thread-2] INFO  ru.popov.systemapp.dao.impl.EmployeesDAOImpl - Получен список имен сотрудников
+7959 08-01-2025 01:18:42.198 [Thread-3] INFO  ru.popov.systemapp.dao.impl.EmployeesDAOImpl - Получен список имен сотрудников
+8030 08-01-2025 01:18:42.269 [JavaFX Application Thread] INFO  ru.popov.systemapp.controller.MainController - Соединение с БД успешное.
+2794 08-01-2025 01:21:20.861 [main] INFO  ru.popov.systemapp.PreloaderApp - Загрузка приложения.......
+5903 08-01-2025 01:21:23.970 [JavaFX Application Thread] INFO  ru.popov.systemapp.dao.impl.JournalDAOImpl - Получен список электронного журнала
+5962 08-01-2025 01:21:24.029 [Thread-3] INFO  ru.popov.systemapp.dao.impl.EmployeesDAOImpl - Получен список имен сотрудников
+5966 08-01-2025 01:21:24.033 [Thread-2] INFO  ru.popov.systemapp.dao.impl.EmployeesDAOImpl - Получен список имен сотрудников
+5983 08-01-2025 01:21:24.050 [JavaFX Application Thread] INFO  ru.popov.systemapp.controller.MainController - Соединение с БД успешное.
+12012 08-01-2025 01:21:30.079 [Thread-4] INFO  ru.popov.systemapp.dao.impl.BatteryDAOImpl - Получен список АКБ в размере 355 шт.
+12036 08-01-2025 01:21:30.103 [Thread-4] INFO  ru.popov.systemapp.controller.BatteryJournalController - Получен список АКБ из базы данных.
+22264 08-01-2025 01:21:40.331 [JavaFX Application Thread] INFO  ru.popov.systemapp.dao.impl.BatteryDAOImpl - Получение аккумулятора по id 1
+22470 08-01-2025 01:21:40.537 [JavaFX Application Thread] INFO  ru.popov.systemapp.dao.impl.BatteryDAOImpl - Изменено количество цилов у АКБ 1 на 950
+23813 08-01-2025 01:21:41.880 [JavaFX Application Thread] INFO  ru.popov.systemapp.controller.BatteryUpdateDataController - Данные аккумулятора 1 изменены
+26925 08-01-2025 01:21:44.992 [Thread-5] INFO  ru.popov.systemapp.dao.impl.BatteryDAOImpl - Получен список АКБ в размере 355 шт.
+26967 08-01-2025 01:21:45.034 [Thread-5] INFO  ru.popov.systemapp.controller.BatteryJournalController - Получен список АКБ из базы данных.
+37466 08-01-2025 01:21:55.533 [JavaFX Application Thread] INFO  ru.popov.systemapp.dao.impl.BatteryDAOImpl - Получение аккумулятора по id 1
+37633 08-01-2025 01:21:55.700 [JavaFX Application Thread] INFO  ru.popov.systemapp.dao.impl.BatteryDAOImpl - Изменено количество цилов у АКБ 1 на 2
+38522 08-01-2025 01:21:56.589 [JavaFX Application Thread] INFO  ru.popov.systemapp.controller.BatteryUpdateDataController - Данные аккумулятора 1 изменены
+40554 08-01-2025 01:21:58.621 [Thread-6] INFO  ru.popov.systemapp.dao.impl.BatteryDAOImpl - Получен список АКБ в размере 355 шт.
+40572 08-01-2025 01:21:58.639 [Thread-6] INFO  ru.popov.systemapp.controller.BatteryJournalController - Получен список АКБ из базы данных.
+45937 08-01-2025 01:22:04.004 [Thread-7] INFO  ru.popov.systemapp.dao.impl.BatteryDAOImpl - Получен список АКБ в размере 355 шт.
+45947 08-01-2025 01:22:04.014 [Thread-7] INFO  ru.popov.systemapp.controller.BatteryJournalController - Получен список АКБ из базы данных.
+98794 08-01-2025 01:22:56.861 [JavaFX Application Thread] INFO  ru.popov.systemapp.MainApp - Завершение работы приложения........
+3061 08-01-2025 01:32:42.536 [main] INFO  ru.popov.systemapp.PreloaderApp - Загрузка приложения.......
+8655 08-01-2025 01:32:48.130 [JavaFX Application Thread] INFO  ru.popov.systemapp.dao.impl.JournalDAOImpl - Получен список электронного журнала
+8806 08-01-2025 01:32:48.281 [Thread-3] INFO  ru.popov.systemapp.dao.impl.EmployeesDAOImpl - Получен список имен сотрудников
+8813 08-01-2025 01:32:48.288 [Thread-2] INFO  ru.popov.systemapp.dao.impl.EmployeesDAOImpl - Получен список имен сотрудников
+8861 08-01-2025 01:32:48.336 [JavaFX Application Thread] INFO  ru.popov.systemapp.controller.MainController - Соединение с БД успешное.
+4437 08-01-2025 01:34:31.559 [main] INFO  ru.popov.systemapp.PreloaderApp - Загрузка приложения.......
+8729 08-01-2025 01:34:35.851 [JavaFX Application Thread] INFO  ru.popov.systemapp.dao.impl.JournalDAOImpl - Получен список электронного журнала
+8787 08-01-2025 01:34:35.909 [Thread-2] INFO  ru.popov.systemapp.dao.impl.EmployeesDAOImpl - Получен список имен сотрудников
+8790 08-01-2025 01:34:35.912 [Thread-3] INFO  ru.popov.systemapp.dao.impl.EmployeesDAOImpl - Получен список имен сотрудников
+8803 08-01-2025 01:34:35.925 [JavaFX Application Thread] INFO  ru.popov.systemapp.controller.MainController - Соединение с БД успешное.
+3596 08-01-2025 01:35:27.335 [main] INFO  ru.popov.systemapp.PreloaderApp - Загрузка приложения.......
+7037 08-01-2025 01:35:30.776 [JavaFX Application Thread] INFO  ru.popov.systemapp.dao.impl.JournalDAOImpl - Получен список электронного журнала
+7111 08-01-2025 01:35:30.850 [Thread-3] INFO  ru.popov.systemapp.dao.impl.EmployeesDAOImpl - Получен список имен сотрудников
+7116 08-01-2025 01:35:30.855 [Thread-2] INFO  ru.popov.systemapp.dao.impl.EmployeesDAOImpl - Получен список имен сотрудников
+7134 08-01-2025 01:35:30.873 [JavaFX Application Thread] INFO  ru.popov.systemapp.controller.MainController - Соединение с БД успешное.
+15768 08-01-2025 01:35:39.507 [JavaFX Application Thread] INFO  ru.popov.systemapp.MainApp - Завершение работы приложения........
+3162 08-01-2025 01:40:02.140 [main] INFO  ru.popov.systemapp.PreloaderApp - Загрузка приложения.......
+6680 08-01-2025 01:40:05.658 [JavaFX Application Thread] INFO  ru.popov.systemapp.dao.impl.JournalDAOImpl - Получен список электронного журнала
+6719 08-01-2025 01:40:05.697 [Thread-2] INFO  ru.popov.systemapp.dao.impl.EmployeesDAOImpl - Получен список имен сотрудников
+6723 08-01-2025 01:40:05.701 [Thread-3] INFO  ru.popov.systemapp.dao.impl.EmployeesDAOImpl - Получен список имен сотрудников
+6739 08-01-2025 01:40:05.717 [JavaFX Application Thread] INFO  ru.popov.systemapp.controller.MainController - Соединение с БД успешное.
+20539 08-01-2025 01:40:19.517 [JavaFX Application Thread] INFO  ru.popov.systemapp.dialog.AlertCloseMain - Завершение работы приложения........
+3382 08-01-2025 01:46:03.022 [main] INFO  ru.popov.systemapp.PreloaderApp - Загрузка приложения.......
+7700 08-01-2025 01:46:07.340 [JavaFX Application Thread] INFO  ru.popov.systemapp.dao.impl.JournalDAOImpl - Получен список электронного журнала
+7804 08-01-2025 01:46:07.444 [Thread-3] INFO  ru.popov.systemapp.dao.impl.EmployeesDAOImpl - Получен список имен сотрудников
+7802 08-01-2025 01:46:07.442 [Thread-2] INFO  ru.popov.systemapp.dao.impl.EmployeesDAOImpl - Получен список имен сотрудников
+2844 08-01-2025 01:47:47.867 [main] INFO  ru.popov.systemapp.PreloaderApp - Загрузка приложения.......
+6231 08-01-2025 01:47:51.254 [JavaFX Application Thread] INFO  ru.popov.systemapp.dao.impl.JournalDAOImpl - Получен список электронного журнала
+6312 08-01-2025 01:47:51.335 [Thread-2] INFO  ru.popov.systemapp.dao.impl.EmployeesDAOImpl - Получен список имен сотрудников
+6320 08-01-2025 01:47:51.343 [Thread-3] INFO  ru.popov.systemapp.dao.impl.EmployeesDAOImpl - Получен список имен сотрудников
+6355 08-01-2025 01:47:51.378 [JavaFX Application Thread] INFO  ru.popov.systemapp.controller.MainController - Соединение с БД успешное.
+14528 08-01-2025 01:47:59.551 [Thread-4] INFO  ru.popov.systemapp.dao.impl.BatteryDAOImpl - Получен список АКБ в размере 355 шт.
+14551 08-01-2025 01:47:59.574 [Thread-4] INFO  ru.popov.systemapp.controller.BatteryJournalController - Получен список АКБ из базы данных.
+29242 08-01-2025 01:48:14.265 [Thread-7] INFO  ru.popov.systemapp.dao.impl.BatteryDAOImpl - Получен список АКБ в размере 355 шт.
+29256 08-01-2025 01:48:14.279 [Thread-7] INFO  ru.popov.systemapp.controller.BatteryJournalController - Получен список АКБ из базы данных.
+72733 08-01-2025 01:48:57.756 [JavaFX Application Thread] INFO  ru.popov.systemapp.dialog.AlertCloseMain - Завершение работы приложения........
+3762 08-01-2025 01:53:19.171 [main] INFO  ru.popov.systemapp.PreloaderApp - Загрузка приложения.......
+7696 08-01-2025 01:53:23.105 [JavaFX Application Thread] INFO  ru.popov.systemapp.dao.impl.JournalDAOImpl - Получен список электронного журнала
+7799 08-01-2025 01:53:23.208 [Thread-2] INFO  ru.popov.systemapp.dao.impl.EmployeesDAOImpl - Получен список имен сотрудников
+7804 08-01-2025 01:53:23.213 [Thread-3] INFO  ru.popov.systemapp.dao.impl.EmployeesDAOImpl - Получен список имен сотрудников
+7840 08-01-2025 01:53:23.249 [JavaFX Application Thread] INFO  ru.popov.systemapp.controller.MainController - Соединение с БД успешное.
+34030 08-01-2025 01:53:49.439 [JavaFX Application Thread] INFO  ru.popov.systemapp.dao.impl.JournalDAOImpl - Данные сотрудника Яшков В.Е. обновлены.
+34046 08-01-2025 01:53:49.455 [JavaFX Application Thread] INFO  ru.popov.systemapp.dao.impl.BatteryDAOImpl - Получение АКБ по коду 714-AK174/A2
+63479 08-01-2025 01:54:18.888 [JavaFX Application Thread] INFO  ru.popov.systemapp.dao.impl.JournalDAOImpl - Получен список электронного журнала
+2851 08-01-2025 01:54:33.816 [main] INFO  ru.popov.systemapp.PreloaderApp - Загрузка приложения.......
+5982 08-01-2025 01:54:36.947 [JavaFX Application Thread] INFO  ru.popov.systemapp.dao.impl.JournalDAOImpl - Получен список электронного журнала
+6040 08-01-2025 01:54:37.005 [Thread-3] INFO  ru.popov.systemapp.dao.impl.EmployeesDAOImpl - Получен список имен сотрудников
+6043 08-01-2025 01:54:37.008 [Thread-2] INFO  ru.popov.systemapp.dao.impl.EmployeesDAOImpl - Получен список имен сотрудников
+6058 08-01-2025 01:54:37.023 [JavaFX Application Thread] INFO  ru.popov.systemapp.controller.MainController - Соединение с БД успешное.
+20852 08-01-2025 01:54:51.817 [JavaFX Application Thread] INFO  ru.popov.systemapp.dao.impl.JournalDAOImpl - Данные сотрудника Яшков В.Е. обновлены.
+20856 08-01-2025 01:54:51.821 [JavaFX Application Thread] INFO  ru.popov.systemapp.dao.impl.BatteryDAOImpl - Получение АКБ по коду 714-AK174/A2
+20861 08-01-2025 01:54:51.826 [JavaFX Application Thread] INFO  ru.popov.systemapp.dao.impl.BatteryDAOImpl - Обновление АКБ 2 прошло успешно.
+23856 08-01-2025 01:54:54.821 [JavaFX Application Thread] INFO  ru.popov.systemapp.dao.impl.JournalDAOImpl - Получен список электронного журнала
+819274 08-01-2025 02:08:10.239 [JavaFX Application Thread] INFO  ru.popov.systemapp.dialog.AlertCloseMain - Завершение работы приложения........
+6270 08-01-2025 11:28:19.983 [main] INFO  ru.popov.systemapp.PreloaderApp - Загрузка приложения.......
+18980 08-01-2025 11:28:32.693 [JavaFX Application Thread] INFO  ru.popov.systemapp.dao.impl.JournalDAOImpl - Получен список электронного журнала
+19266 08-01-2025 11:28:32.979 [Thread-2] INFO  ru.popov.systemapp.dao.impl.EmployeesDAOImpl - Получен список имен сотрудников
+19276 08-01-2025 11:28:32.989 [Thread-3] INFO  ru.popov.systemapp.dao.impl.EmployeesDAOImpl - Получен список имен сотрудников
+19308 08-01-2025 11:28:33.021 [JavaFX Application Thread] INFO  ru.popov.systemapp.controller.MainController - Соединение с БД успешное.
+113198 08-01-2025 11:30:06.911 [JavaFX Application Thread] INFO  ru.popov.systemapp.dao.impl.JournalDAOImpl - Получен список электронного журнала
+153478 08-01-2025 11:30:47.191 [Thread-4] INFO  ru.popov.systemapp.dao.impl.BatteryDAOImpl - Получен список АКБ в размере 355 шт.
+153510 08-01-2025 11:30:47.223 [Thread-4] INFO  ru.popov.systemapp.controller.BatteryJournalController - Получен список АКБ из базы данных.
+200985 08-01-2025 11:31:34.698 [Thread-8] INFO  ru.popov.systemapp.dao.impl.BatteryDAOImpl - Получен список АКБ в размере 355 шт.
+201031 08-01-2025 11:31:34.744 [Thread-8] INFO  ru.popov.systemapp.controller.BatteryJournalController - Получен список АКБ из базы данных.
+212317 08-01-2025 11:31:46.030 [JavaFX Application Thread] INFO  ru.popov.systemapp.dialog.AlertCloseMain - Завершение работы приложения........
+15086 15-02-2025 17:38:22.326 [JavaFX Application Thread] INFO  ru.popov.systemapp.dao.impl.JournalDAOImpl - Получен список электронного журнала
+15202 15-02-2025 17:38:22.442 [Thread-2] INFO  ru.popov.systemapp.dao.impl.EmployeesDAOImpl - Получен список имен сотрудников
+15201 15-02-2025 17:38:22.441 [Thread-3] INFO  ru.popov.systemapp.dao.impl.EmployeesDAOImpl - Получен список имен сотрудников
+15243 15-02-2025 17:38:22.483 [JavaFX Application Thread] INFO  ru.popov.systemapp.controller.MainController - Соединение с БД успешное.
+3118148 15-02-2025 18:30:05.388 [Thread-4] INFO  ru.popov.systemapp.dao.impl.BatteryDAOImpl - Получен список АКБ в размере 355 шт.
+3118180 15-02-2025 18:30:05.420 [Thread-4] INFO  ru.popov.systemapp.controller.BatteryJournalController - Получен список АКБ из базы данных.
+3161287 15-02-2025 18:30:48.527 [Thread-8] INFO  ru.popov.systemapp.dao.impl.BatteryDAOImpl - Получен список АКБ в размере 355 шт.
+3161306 15-02-2025 18:30:48.546 [Thread-8] INFO  ru.popov.systemapp.controller.BatteryJournalController - Получен список АКБ из базы данных.
+3172140 15-02-2025 18:30:59.380 [JavaFX Application Thread] INFO  ru.popov.systemapp.dialog.AlertCloseMain - Завершение работы приложения........

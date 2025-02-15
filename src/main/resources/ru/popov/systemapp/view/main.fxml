@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<VBox fx:id="main"
+      prefHeight="600.0"
+      prefWidth="900.0"
+      styleClass="main"
+      xmlns="http://javafx.com/javafx/17.0.6"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.popov.systemapp.controller.MainController">
+  <children>
+    <MenuBar opacity="0.0" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem fx:id="" mnemonicParsing="false" text="О приложении" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+      <Pane prefHeight="591.0" prefWidth="900.0">
+         <children>
+            <TableView fx:id="journalTable" layoutX="7.0" layoutY="4.0" prefHeight="251.0" prefWidth="887.0">
+              <columns>
+                <TableColumn fx:id="numberColumn" prefWidth="49.0" styleClass="rowTableJournal" text="№ п/п" />
+                <TableColumn fx:id="dateColumn" prefWidth="101.0" styleClass="rowTableJournal" text="Дата" />
+                  <TableColumn id="columnName" fx:id="nameColumn" prefWidth="124.0" styleClass="rowTableJournal" text="Ф.И.О." />
+                  <TableColumn fx:id="zavNumberColumn" prefWidth="150.0" styleClass="rowTableJournal" text="Зав. № " />
+                  <TableColumn fx:id="brNumberColumn" prefWidth="54.0" styleClass="rowTableJournal" text="№ БР" />
+                  <TableColumn fx:id="caseColumn" prefWidth="112.0" styleClass="rowTableJournal" text="Защитный чехол" />
+                  <TableColumn fx:id="changerColumn" prefWidth="65.0" styleClass="rowTableJournal" text="ЗУ" />
+                  <TableColumn fx:id="batteryColumn" prefWidth="108.0" styleClass="rowTableJournal" text="Запасной АКБ" />
+                  <TableColumn fx:id="headsetColumn" prefWidth="125.0" styleClass="rowTableJournal" text="Гарнитура" />
+              </columns>
+            </TableView>
+            <ToolBar layoutX="11.0" layoutY="268.0" prefHeight="40.0" prefWidth="880.0" style="-fx-background-color: none;">
+              <items>
+                <Button fx:id="btnUpdate" mnemonicParsing="false" onAction="#onActionUpdateTableTheUser" styleClass="btn" text="Найти" />
+                  <ChoiceBox fx:id="choiceBoxData" prefWidth="150.0" styleClass="choiceBox" />
+                  <DatePicker fx:id="datePicker" styleClass="datePicker" />
+                  <Button fx:id="btnPrintMain" mnemonicParsing="false" styleClass="btn" text="Напечатать данные" />
+                  <Button fx:id="btnUpdateBattery" mnemonicParsing="false" styleClass="btn" text="Заменить АКБ" />
+              </items>
+            </ToolBar>
+            <GridPane hgap="5.0" layoutX="23.0" layoutY="312.0" prefHeight="169.0" prefWidth="358.0" vgap="13.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="139.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="254.0" minWidth="10.0" prefWidth="167.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Выбрать сотрудника" />
+                  <Label text="Зарядное устройство" GridPane.rowIndex="2" />
+                  <ComboBox fx:id="employeeComboBox" prefHeight="25.0" prefWidth="194.0" styleClass="choiceBox" GridPane.columnIndex="1" />
+                  <ComboBox fx:id="changerComboBox" prefHeight="25.0" prefWidth="193.0" styleClass="choiceBox" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label text="Добавить нового" GridPane.rowIndex="3" />
+                  <Button fx:id="btnSave" mnemonicParsing="false" onAction="#openSaveNewEmployeeView" prefHeight="25.0" prefWidth="193.0" styleClass="btn" text="Запись в БД" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Button mnemonicParsing="false" onAction="#onActionWriteOff" prefHeight="24.0" prefWidth="157.0" styleClass="btn" text="Списать" GridPane.rowIndex="4" />
+                  <Button mnemonicParsing="false" onAction="#saveJournal" prefHeight="24.0" prefWidth="198.0" styleClass="btn " text="Записать" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextArea fx:id="inputText"
+                            onKeyTyped="#onTypedKeyAction" promptText="9C806420   714-AK173\A1"
+                            prefHeight="38.0"
+                            prefWidth="163.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin></TextArea>
+                  <Label text="Получение данных" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <ProgressBar fx:id="mainProgressBar" layoutX="14.0" layoutY="551.0" prefHeight="18.0" prefWidth="370.0" progress="0.0" styleClass="progress-bar-primary" />
+            <Label layoutX="451.0" layoutY="312.0" styleClass="labelCount" text="Количество выданных:" />
+            <Label layoutX="451.0" layoutY="341.0" styleClass="labelCount" text="Количество должников:" />
+            <Label fx:id="infoLabel" layoutX="451.0" layoutY="367.0" styleClass="text-info" />
+            <Button layoutX="19.0" layoutY="512.0" mnemonicParsing="false" onAction="#openJournalBatteryView" prefHeight="24.0" prefWidth="241.0" styleClass="btn" text="Аккумуляторный журнал" />
+            <Label fx:id="numberOfIssued" layoutX="633.0" layoutY="312.0" prefHeight="16.0" prefWidth="30.0" styleClass="labelNumber" />
+            <Label fx:id="numberDebtors" layoutX="635.0" layoutY="341.0" prefHeight="16.0" prefWidth="30.0" styleClass="labelNumber" />
+            <Circle fx:id="circle" fill="#f5f5f5" layoutX="850.0" layoutY="551.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label layoutX="699.0" layoutY="543.0" text="Соединение с БД" />
+         </children>
+      </Pane>
+  </children>
+</VBox>

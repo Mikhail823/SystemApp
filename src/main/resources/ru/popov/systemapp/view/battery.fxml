@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="600.0"
+      prefWidth="755.0" styleClass="main"
+      stylesheets="@../style/batteryJournal-style.css"
+      xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.popov.systemapp.controller.BatteryJournalController">
+  <children>
+    <MenuBar  opacity="0.0" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="Меню">
+          <items>
+            <MenuItem mnemonicParsing="false" styleClass="exit" text="Quit" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+      <Pane prefHeight="580.0" prefWidth="900.0">
+         <children>
+            <TableView fx:id="batteryTable" layoutX="7.0" layoutY="7.0" prefHeight="390.0" prefWidth="739.0" styleClass="batteryTable">
+              <columns>
+                <TableColumn fx:id="numberColumn" prefWidth="48.0" text="№ п/п" />
+                <TableColumn fx:id="codeColumn" prefWidth="102.0" text="Код АКБ" />
+                  <TableColumn fx:id="lastDateColumn" prefWidth="183.0" text="Дата последнего заряда" />
+                  <TableColumn fx:id="countCiclColumn" prefWidth="111.0" text="Кол-во циклов" />
+                  <TableColumn fx:id="conditionColumn" prefWidth="120.0" text="Состояние" />
+                  <TableColumn fx:id="groupColumn" prefWidth="75.0" text="Группа" />
+                  <TableColumn fx:id="statusColumn" prefWidth="99.0" text="Статус" />
+              </columns>
+            </TableView>
+            <ToolBar layoutX="7.0" layoutY="408.0" prefHeight="40.0" prefWidth="739.0" style="-fx-background-color: none;">
+              <items>
+                <Button mnemonicParsing="false" onAction="#updateDataTableBatteryClick" styleClass="btn" text="Найти данные" />
+                  <DatePicker styleClass="datePicker" fx:id="datePicker" prefHeight="25.0" prefWidth="129.0" />
+                  <ComboBox styleClass="choiceBox" fx:id="selectGroupBox" prefHeight="25.0" prefWidth="105.0" />
+                  <ComboBox styleClass="choiceBox" fx:id="selectCondition" prefHeight="25.0" prefWidth="113.0" />
+                  <TextField promptText="714-AK173/A1" fx:id="selectCode" prefHeight="25.0" prefWidth="126.0" />
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" styleClass="btn" text="Печать" />
+              </items>
+            </ToolBar>
+            <Button layoutX="14.0" layoutY="460.0" mnemonicParsing="false" onAction="#clickOpenScannerQRView" styleClass="btn" text="Сканирование QR-кода АКБ" />
+             <Label styleClass="text-info" fx:id="infoCycle" layoutX="13.0" layoutY="505.0"/>
+             <Label styleClass="text-info" fx:id="infoLabel" layoutX="13.0" layoutY="535.0" text="Info" />
+            <ProgressIndicator fx:id="progressIndicator" layoutX="638.0" layoutY="492.0" opacity="0.0" progress="0.0" />
+            <Button fx:id="btnUpdateBattery" layoutX="260.0" layoutY="460.0" mnemonicParsing="false" styleClass="btn" text="Изменить данные АКБ" />
+         </children>
+      </Pane>
+  </children>
+</VBox>

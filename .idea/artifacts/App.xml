@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="javafx-preloader" build-on-make="true" name="App">
+    <output-path>$PROJECT_DIR$/out/artifacts/App</output-path>
+    <properties id="javafx-preloader-properties">
+      <options>
+        <option name="preloaderClass" value="ru.popov.systemapp.Preloader" />
+      </options>
+    </properties>
+    <root id="archive" name="App.jar" />
+  </artifact>
+</component>
